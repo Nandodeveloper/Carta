@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong class="strong">Minha princesa,</strong>
+                        <p>
+                            Oi minha princesa que eu amo muito!
+                            você é uma das pessoas mais importantes da minha vida, desde que te conheci sempre te amei muito, meu amor,
+                            apesar de alguns ocorridos eu nunca deixei de amar você. Saiba que eu te amo muito e vou continuar te amando até o fim!
+                            Feliz dia dos namorados para a melhor namorada do mundo!
+                            <img class="Cosmo_e_Wanda" src="WhatsApp Image 2024-06-11 at 20.01.03.jpeg" alt="">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
